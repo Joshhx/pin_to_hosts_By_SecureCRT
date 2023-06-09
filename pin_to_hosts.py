@@ -8,7 +8,7 @@ formatted = Now.strftime("%d%m%Y-%H%M%S")
 dir="D:\Pines diarios\Fichero de Pines\/" + formatted + ".txt"
 filas = crt.Screen.Rows
 ip_source = '0.0.0.0'
-gw_source = 192.168.1.1
+gw_source = '192.168.1.1'
 
 circuitos = []
 
