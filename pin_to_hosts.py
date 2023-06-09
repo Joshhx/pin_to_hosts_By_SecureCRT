@@ -20,7 +20,7 @@ def continuar():
         return True
         
 def listaSedes():
-    f = open("D:\Pines diarios\Script pines diarios\equipos", "r")
+    f = open("D:\Pines diarios\Script pines diarios\equipos.txt", "r")
     if f.mode == 'r':
         fl = f.readlines()
     for x in fl:
