@@ -5,7 +5,7 @@ import os
 
 Now = datetime.now()
 formatted = Now.strftime("%d%m%Y-%H%M%S")
-dir="D:\Pines diarios\Fichero de Pines\/" + formatted + ".txt"
+dir="D:\/" + formatted + ".txt"
 filas = crt.Screen.Rows
 ip_source = '0.0.0.0'
 gw_source = '192.168.1.1'
@@ -20,7 +20,7 @@ def continuar():
         return True
         
 def listaSedes():
-    f = open("D:\Pines diarios\Script pines diarios\equipos.txt", "r")
+    f = open("D:\equipos.txt", "r")
     if f.mode == 'r':
         fl = f.readlines()
     for x in fl:
@@ -58,7 +58,7 @@ if continuar():
     fs.close()
     preg = crt.Dialog.MessageBox( " Quieres abrir la carpeta "," La ejecucion de Pines ha finalizado correctamente...!!! ",32|1)
     if int(preg) == 1:
-        os.startfile("D:\Pines diarios\Fichero de Pines\/")
+        os.startfile("D:\/")
     crt.Screen.Send ("exit"+chr(13))
     
 else:
